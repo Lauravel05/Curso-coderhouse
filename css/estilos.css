@@ -1,0 +1,573 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* -----------------------------HEADER---------------------------------- */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    background-color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    color: #f56e00;
+}
+
+.buscar{
+    position: absolute;
+    padding-top: 10px;
+    margin-left: -50px;
+}
+
+.buscar input{
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn{
+    position: absolute;
+    top: 1px;
+    right: -2px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    background: #000;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input{
+    width: 240px;
+}
+
+.buscar input:focus{
+    width: 240px;
+}
+
+/* --------------------------------------BOTON WSP--------------------------------- */
+
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+.productos{
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background: #fff;
+    margin-top: 0px;
+}
+
+section h2{
+    font-size: 25pt;
+    font-family: 'Patua One', cursive;
+    color: #f56e00;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+/* ---------------------------------------------------INDE--X-------------------------------------------------- */
+
+/* -----------------------------------------NUESTROS PRODUCTOS------------------------------------------------- */
+main article img{
+    width: 266px;
+    height: 325px;
+    display: block;
+    border-radius: 2px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+section article{
+    float: left;
+}
+
+/* ---------------------------------------------BOTONES VER MÁS------------------------------------------------ */
+main button {
+    background-color: #000;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 35%;
+    margin-bottom: 30px;
+}
+
+main button a:hover{
+    color: #f56e00;
+}
+
+main button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ------------------------------------------QUIENES SOMOS----------------------------------------------------- */
+.izquierda{
+    background: #f56e00;
+    height: 100vh;
+    width: 50%;
+}
+
+.derecha{
+    background-image: url(/images/bannernosotros.jpeg);
+    background-size: cover;
+    background-position: center; 
+    width: 50%;
+    height: 100vh;
+}
+
+#pantalla-dividida{
+    display: flex;
+}
+
+h3{
+    font-size: 60px;
+    margin-bottom: 40px;
+    margin: auto;
+    margin-left: 80px;
+    font-family: 'Patua One', cursive;
+    color: #fff;
+    padding-top: 10%;
+    padding-bottom: 40px;
+}
+
+.boton{
+    background-color: #000;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 80px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.boton:hover{
+    color: #f56e00;
+}
+
+
+p{
+    font-size: 19px;
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+    margin-left: 80px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+/* ------------------------------------------------FOOTER------------------------------------------------------- */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #000;
+    margin: auto;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20pt;
+    font-family: 'Patua One', cursive;
+    padding-top: 25%;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(39, 38, 38);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #f56e00;
+}
+
+.pie-pagina .grupo-2{
+    background-color: rgb(39, 38, 38);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -----------------------------------------TIENDA-------------------------- */
+
+.tienda{
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    color: #f56e00;
+    font-size: 25pt;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-container{
+    margin: 20px;
+    padding: 2px 16px;
+
+}
+
+.product-container:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 5);
+}
+
+
+.product-container img{
+    width: 500px;
+}
+
+.product-container h4{
+    color: #f56e00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* -------------------------------------GALERÍA-------------------------------------- */
+
+.container-img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 250px;
+    grid-gap: 15px;
+}
+
+.img-galeria{
+    border-radius: 8px;
+}
+
+.img-galeria:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.container-img .box-img:nth-child(2){
+    grid-row-start: span 2;
+}
+
+.container-img .box-img:nth-child(3){
+    grid-row-start: span 2;
+}
+
+.container-img .box-img:nth-child(6){
+    grid-row-start: span 1;
+}
+
+.container-img .box-img:nth-child(4){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.container-img .box-img:nth-child(5){
+    grid-column-start: span 2;
+    grid-row-start: span 1;
+}
+
+/* ------------------------------------------NOSOTROS----------------------------------- */
+
+.galeria{
+    height: 800px;
+    display: grid;
+    padding: 20px;
+}
+
+.img{
+    background-color: #f56e00;
+}
+
+.img1{
+    grid-column: 1/4;
+    grid-row: 1/10;
+    background-image: url(/images/foto4.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    grid-column: 4/6;
+    grid-row: 1/5;
+    background-color: #f56e00;
+}
+
+.img3{
+    grid-column: 4/6;
+    grid-row: 5/10;
+    background-image: url(/images/foto1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria2{
+    display: grid;
+    height: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.img4{
+    grid-column: 1/4;
+    grid-row: 1/10;
+    background-image: url(/images/foto6.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img5{
+    grid-column: 4/6;
+    grid-row: 1/12;
+    background-image: url(/images/foto3.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img6{
+    background-color: #f56e00;
+    grid-column: 1/4;
+    grid-row: 10/12;
+}
+
+.titulo{
+    font-size: 25pt;
+    font-family: 'Patua One', cursive;
+    color: #fff;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* -----------------------------------------CONTACTENOS----------------------------------- */
+
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.container-form a i{
+    color: #f56e00;
+    margin-right: 10px;
+}
+
+.container-form form .campo, textarea{
+   width: 100%;
+   padding: 15px 10px;
+   font-size: 15px;
+   border: 1px solid #f56e00;
+   margin-bottom: 20px;
+   border-radius: 3px;
+   outline: 0px; 
+}
+
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover{
+    color: #f56e00;
+}
+
+/* ---------------------------------------------------PRODUCTOS PAGES-------------------------------------------*/
+
+.sproduct{
+    display: flex;
+}
+
+.img-vela{
+    width: 450px;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.row{
+    width: 100%;
+    height: 800px;
+}
+ 
+.small-img-group{
+    display: flex;
+}
+
+.small-img{
+    width: 90px;
+}
+
+.info{
+    padding-top: 40px;
+}
+
+
