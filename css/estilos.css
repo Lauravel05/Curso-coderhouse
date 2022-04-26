@@ -150,7 +150,7 @@ section article{
 }
 
 /* ---------------------------------------------BOTONES VER MÁS------------------------------------------------ */
-main button {
+.vermas{
     background-color: #000;
     border: none;
     border-radius: 4px;
@@ -164,7 +164,7 @@ main button {
     margin-bottom: 30px;
 }
 
-main button a:hover{
+.vermas a:hover{
     color: #f56e00;
 }
 
@@ -543,31 +543,65 @@ p{
 
 /* ---------------------------------------------------PRODUCTOS PAGES-------------------------------------------*/
 
-.sproduct{
-    display: flex;
-}
-
-.img-vela{
-    width: 450px;
-    margin-left: 10%;
-    margin-top: 50px;
-}
-
-.row{
-    width: 100%;
-    height: 800px;
-}
- 
 .small-img-group{
     display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
 }
 
 .small-img{
-    width: 90px;
+    width: 110px;
+    height: 65px;
 }
 
-.info{
-    padding-top: 40px;
+.sproduct select{
+    display: block;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: solid #f56e00 1px;
+    border-radius: 4px;
 }
 
+.sproduct select:focus{
+    outline: none;
+}
 
+.sproduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: solid #f56e00 1px;
+    border-radius: 4px;
+
+}
+
+.sproduct input:focus{
+    outline: none;
+}
+
+.buy-btn{
+    background-color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+.buy-btn:hover{
+    color: #f56e00;
+}
