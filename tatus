@@ -1,0 +1,35 @@
+[33mcommit 67ff0e8022c03e9711ecfed1a1a98938a2ea1c26[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Laura Velandia <lauravelandia1@hotmail.com>
+Date:   Sun May 1 21:52:00 2022 -0500
+
+    agrego header y footer a productos
+
+[33mcommit 02a3a4910c8cc173ca0b1c1c4cd5daac778f88c2[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Laura Velandia <lauravelandia1@hotmail.com>
+Date:   Sun May 1 21:41:16 2022 -0500
+
+    footer
+
+[33mcommit 07934f9d76f804327a972a1e004f2be3711409fb[m
+Author: Laura Velandia <lauravelandia1@hotmail.com>
+Date:   Sun May 1 14:32:46 2022 -0500
+
+    header
+
+[33mcommit 7b14be7d0b919de873a2d257ce40de27a3e19bb4[m
+Author: Laura Velandia <lauravelandia1@hotmail.com>
+Date:   Mon Apr 25 20:39:45 2022 -0500
+
+    productos y estilos
+
+[33mcommit e1691c951e2d553073e740e7b18193572f63c252[m
+Author: Laura Velandia <lauravelandia1@hotmail.com>
+Date:   Mon Apr 25 15:16:10 2022 -0500
+
+    cambio nombre container en css
+
+[33mcommit 338903c23dfabbf34b87c902abee30e57d3d5307[m
+Author: Laura Velandia <lauravelandia1@hotmail.com>
+Date:   Mon Apr 25 11:49:56 2022 -0500
+
+    primer commit
