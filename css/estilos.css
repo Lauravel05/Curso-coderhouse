@@ -1,13 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 *{
     margin: 0px;
     padding: 0px;
 }
 
-/* -----------------------------HEADER---------------------------------- */
-.navbar{
-    font-size: 18px;
+body {
     font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+}
+
+h6{
+    color: rgb(24, 22, 22);
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #3a3833;
+}
+
+hr{
+    width: 60px;
+    height: 2px;
+    background-color: coral;
+}
+
+.star{
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod
+}
+
+/* ----------------------------------------------------HEADER---------------------------------------------------------- */
+.navbar{
+    font-size: 16px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -29,6 +97,25 @@
     cursor: pointer;
     font-weight: 500px;
     transition: 0.3s ease;
+}
+
+/* -----------------------MOVIEL NAV-----------------  */
+
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #000;
+}
+
+#bar:hover{
+    color: #f56e00;
 }
 /* --------------------------------------BOTON WSP--------------------------------- */
 
@@ -54,125 +141,67 @@
     background: #fff;
 }
 
-.productos{
-    height: 90vh;
+/* ---------------------------------------------------INDEX-------------------------------------------------- */
+
+/* ----------------------------------------------------BANNER PRINCIPAL ----------------------------------------*/
+
+#home{
+    background-image: url(/images/banner.jpeg);
     width: 100%;
+    height: 100vh;
     background-size: cover;
-    background-position: center;
-    background: #fff;
-    margin-top: 0px;
+    background-position: top 130px center ;  
 }
-
-section h2{
-    font-size: 25pt;
-    font-family: 'Patua One', cursive;
-    color: #f56e00;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-
-/* ---------------------------------------------------INDE--X-------------------------------------------------- */
 
 /* -----------------------------------------NUESTROS PRODUCTOS------------------------------------------------- */
-main article img{
-    width: 266px;
-    height: 325px;
-    display: block;
-    border-radius: 2px;
-    padding-left: 60px;
-    padding-bottom: 20px;
-    margin-top: 30px;
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
 }
 
-section article{
-    float: left;
+.product img{
+    transition: 0.3s all;
 }
 
-/* ---------------------------------------------BOTONES VER MÁS------------------------------------------------ */
-.vermas{
-    background-color: #000;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 35%;
-    margin-bottom: 30px;
+.product:hover img{
+    opacity: 0.7;
 }
 
-.vermas a:hover{
-    color: #f56e00;
+.product .buy-btn{
+    background-color: rgb(248, 122, 76);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
 }
 
-main button a{
-    text-decoration: none;
-    color: #fff;
+.product:hover .buy-btn{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 /* ------------------------------------------QUIENES SOMOS----------------------------------------------------- */
-.izquierda{
-    background: #f56e00;
+#banner{
+    background-image: url(/images/quienes.jpeg);
+    width: 100%;
     height: 100vh;
-    width: 50%;
-}
-
-.derecha{
-    background-image: url(/images/bannernosotros.jpeg);
     background-size: cover;
-    background-position: center; 
-    width: 50%;
-    height: 100vh;
-}
-
-#pantalla-dividida{
+    background-position: top 70px center ; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-h3{
-    font-size: 60px;
-    margin-bottom: 40px;
-    margin: auto;
-    margin-left: 80px;
-    font-family: 'Patua One', cursive;
-    color: #fff;
-    padding-top: 10%;
-    padding-bottom: 40px;
-}
-
-.boton{
-    background-color: #000;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    padding: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 40px;
-    margin-left: 80px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;  
-}
-
-.boton:hover{
-    color: #f56e00;
-}
-
-
-.texto{
-    font-size: 19px;
-    line-height: 30px;
-    width: 50%;
-    margin: auto;
-    margin-left: 80px;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+#banner p{
     color: #fff;
 }
+
+#banner h1{
+    color: #fff;
+}
+
 
 /* ------------------------------------------------FOOTER------------------------------------------------------- */
 footer{
@@ -194,7 +223,7 @@ footer li a{
 }
 
 footer li a:hover{
-    color: #f56e00;
+    color: coral;
 }
 
 footer .copyright a{
@@ -515,19 +544,9 @@ footer .copyright a:hover{
     outline: none;
 }
 
-.buy-btn{
-    background-color: #000;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    padding: 9px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 10px;
-}
 
-.buy-btn:hover{
-    color: #f56e00;
+.buy-btn a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
 }

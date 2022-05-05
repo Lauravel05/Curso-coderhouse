@@ -9,25 +9,12 @@
 <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-<!-- tipografias -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-
 <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 <!-- css -->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-
-
-
 
 <body>
 <!-- HEADER  -->
@@ -42,23 +29,23 @@
             <ul class="navbar-nav ml-auto">
               
               <li class="nav-item">
-                <a class="nav-link" href="#">Inicio</a>
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Tienda</a>
+                <a class="nav-link" href="./tienda.html">Tienda</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Galería</a>
+                <a class="nav-link" href="./galeria.html">Galería</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Contáctenos</a>
+                <a class="nav-link" href="./contactenos.html">Contáctenos</a>
               </li>
 
               <li class="nav-item">
@@ -88,8 +75,8 @@
     
             <!-- derecha  -->
                 <div class="col-lg-6 col-md-12 col-12">
-                    <h4 class="py-1">Velas aromatizadas</h4>
-                    <h5>$4.500 unidad</h5>
+                    <h3 class="py-1">Velas aromatizadas</h3>
+                    <h4>$4.500 unidad</h4>
                     <select class="my-3">
                         <option>Seleccione aroma</option>
                         <option>Kiwi</option>
@@ -136,6 +123,72 @@
         </section>
 
     </main>
+
+<!-- sección productos relacionados -->
+<section id="featured" class="my-5">
+    <div class="container text-center mt-4 pb-4">
+        <h3>Productos relacionados</h3>
+        <hr class="mx-auto">
+    </div>
+
+    <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="../images/producto1.jpeg" alt="">
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Velón #8</h5>
+            <h4 class="p-proce">$8.500</h4>
+            <button class="buy-btn"><a href="./vela8.html">Ver más</a></button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="../images/producto2.jpeg" alt="">
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Velón #9</h5>
+            <h4 class="p-proce">$10.000</h4>
+            <button class="buy-btn"><a href="./vela9.html">Ver más</a></button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="../images/producto3.jpeg" alt="">
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Pebeteros</h5>
+            <h4 class="p-proce">$2.000</h4>
+            <button class="buy-btn"><a href="./pebeteros.html">Ver más</a></button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="../images/producto4.jpeg" alt="">
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Vela aromatizada</h5>
+            <h4 class="p-proce">$4.500</h4>
+            <button class="buy-btn"><a href="#">Ver más</a></button>
+        </div>
+    </div>
+</section>
 
 <!-- FOOTER  -->
 <footer class="mt-5 py-5">

@@ -4,22 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velas y velones Caydis</title>
+    <title>Caydis</title>
 
 <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- tipografias -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-
 <!-- bootstrap -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 <!-- css -->
     <link rel="stylesheet" href="css/estilos.css">
@@ -29,12 +20,14 @@
 
 <!-- HEADER  -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
         <div class="container">
           <img src="/images/logo.png" alt="" width="200">
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span><i id="bar" class="fa-solid fa-bars"></i></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               
@@ -42,20 +35,20 @@
                 <a class="nav-link" href="#">Inicio</a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="tienda.html">Tienda</a>
+              <li class="nav-item"> 
+                <a class="nav-link" href="pages/tienda.html">Tienda</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galería</a>
+                <a class="nav-link" href="pages/galeria.html">Galería</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="contactenos.html">Contáctenos</a>
+                <a class="nav-link" href="pages/contactenos.html">Contáctenos</a>
               </li>
 
               <li class="nav-item">
@@ -69,60 +62,89 @@
 
     <main>
 
+        <!-- wsp  -->
         <a href="https://api.whatsapp.com/send?phone=3002481642" class="btn-wsp" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
 
-        <section class="productos">
-            <h2>Nuestros productos</h2>
-            
-                <article>
-                    <img src="images/producto1.jpeg" alt="Producto1"> 
+        <!-- banner principal -->
+        <section id="home"></section>
 
-                    <button class="vermas">
-                        <a href="pages/vela8.html">Ver más</a>
-                    </button>
-                </article>
-                
-                <article>
-                    <img src="images/producto2.jpeg" alt="Producto2">
-
-                    <button class="vermas">
-                        <a href="pages/vela9.html">Ver más</a>
-                    </button>
-                </article>
-                
-                <article>
-                    <img src="images/producto3.jpeg" alt="Producto3"> 
-
-                    <button class="vermas">
-                        <a href="pages/pebeteros.html">Ver más</a>
-                    </button>
-                </article>
-
-                <article>
-                    <img src="images/producto4.jpeg" alt="Producto4">
-
-                    <button class="vermas">
-                        <a href="pages/aromatizadas.html">Ver más</a>
-                    </button>
-                </article>
-
-        </section>
-
-        <section id="pantalla-dividida">
-            <div class="izquierda">
-                <h3>Quienes somos</h3>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, deleniti, similique amet sapiente repellat laborum eos commodi maxime earum praesentium explicabo totam nihil consequatur illo sed aliquam error magni tenetur.</p>
-
-                <div>
-                    <a href="pages/nosotros.html" class="boton">Saber más</a>
-                </div>
+        <!-- sección nuestros productos -->
+        <section id="featured" class="my-5 pb-5">
+            <div class="container text-center mt-4 pb-4">
+                <h3>Nuestros productos</h3>
+                <hr class="mx-auto">
             </div>
 
-            <div class="derecha"></div>
+            <div class="row mx-auto container-fluid">
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="images/producto1.jpeg" alt="">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Velón #8</h5>
+                    <h4 class="p-proce">$8.500</h4>
+                    <button class="buy-btn"><a href="pages/vela8.html">Ver más</a></button>
+                </div>
 
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="images/producto2.jpeg" alt="">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Velón #9</h5>
+                    <h4 class="p-proce">$10.000</h4>
+                    <button class="buy-btn"><a href="pages/vela9.html">Ver más</a></button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="images/producto3.jpeg" alt="">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Pebeteros</h5>
+                    <h4 class="p-proce">$2.000</h4>
+                    <button class="buy-btn"><a href="pages/pebeteros.html">Ver más</a></button>
+                </div>
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="images/producto4.jpeg" alt="">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">Vela aromatizada</h5>
+                    <h4 class="p-proce">$4.500</h4>
+                    <button class="buy-btn"><a href="pages/aromatizadas.html">Ver más</a></button>
+                </div>
+            </div>
         </section>
+
+        <!-- seccion quienes somos  -->
+        <section id="banner" class="my-5 py-5">
+            <div class="container">
+                <h1>QUIENES SOMOS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Sit eaque error quod quas accusamus. Non assumenda,<br> quasi natus, enim corporis  eaque iste dolore earum optio<br> fuga explicabo laudantium ipsum?</p>
+                <button class="text-uppercase buy-btn">Saber más</button>
+            </div>
+        </section>
+
     </main>
 
 <!-- FOOTER  -->
