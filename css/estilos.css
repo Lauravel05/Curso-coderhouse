@@ -70,6 +70,30 @@ hr{
     color: goldenrod
 }
 
+/* --------------------------------------BOTON WSP--------------------------------- */
+
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
 /* ----------------------------------------------------HEADER---------------------------------------------------------- */
 .navbar{
     font-size: 16px;
@@ -101,107 +125,30 @@ hr{
 
 /* -----------------------MOVIEL NAV-----------------  */
 
-.navbar-light .navbar-toggler{
-    border: none;
-    outline: none;
-}
-
-#bar{
-    font-size: 1.5rem;
+.nav-toggle{
     padding: 7px;
     cursor: pointer;
-    transition: 0.3s ease;
+    background: none;
     color: #000;
+    transition: 0.3s ease;
+    display: none;
 }
 
-#bar:hover{
+
+.nav-toggle:hover{
     color: #f56e00;
-}
-/* --------------------------------------BOTON WSP--------------------------------- */
-
-.btn-wsp{
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    background-color: #0df053;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-    z-index: 100;
+    background: none;
 }
 
-.btn-wsp:hover{
-    text-decoration: none;
-    color: #0df053;
-    background: #fff;
+@media (max-width: 991px){
+    .nav-toggle{
+        display: inline;
+    }
+
+    .navbar-nav{
+        flex-direction: column;
+    }
 }
-
-/* ---------------------------------------------------INDEX-------------------------------------------------- */
-
-/* ----------------------------------------------------BANNER PRINCIPAL ----------------------------------------*/
-
-#home{
-    background-image: url(/images/banner.jpeg);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: top 130px center ;  
-}
-
-/* -----------------------------------------NUESTROS PRODUCTOS------------------------------------------------- */
-.product{
-    cursor: pointer;
-    margin-bottom: 2rem;
-}
-
-.product img{
-    transition: 0.3s all;
-}
-
-.product:hover img{
-    opacity: 0.7;
-}
-
-.product .buy-btn{
-    background-color: rgb(248, 122, 76);
-    transform: translateY(20px);
-    opacity: 0;
-    transition: 0.3s all;
-}
-
-.product:hover .buy-btn{
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-/* ------------------------------------------QUIENES SOMOS----------------------------------------------------- */
-#banner{
-    background-image: url(/images/quienes.jpeg);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: top 70px center ; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-#banner p{
-    color: #fff;
-}
-
-#banner h1{
-    color: #fff;
-}
-
 
 /* ------------------------------------------------FOOTER------------------------------------------------------- */
 footer{
@@ -244,48 +191,154 @@ footer .copyright a:hover{
     background-color: #000;
 }
 
-/* -----------------------------------------TIENDA-------------------------- */
+/* -------------------------------------------------------INDEX------------------------------------------------------ */
 
-.tienda{
-    font-family: 'Patua One', cursive;
-    text-align: center;
-    color: #f56e00;
-    font-size: 25pt;
-    padding-top: 30px;
-    padding-bottom: 30px;
+/* -------------------BANNER PRINCIPAL -----------------------*/
+
+#home{
+    background-image: url(/images/banner.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 130px center ;  
 }
 
-.page-content{
+/* ------------------NUESTROS PRODUCTOS----------------------- */
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .buy-btn{
+    background-color: rgb(248, 122, 76);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* -------------------QUIENES SOMOS------------------------------ */
+#banner{
+    background-image: url(/images/quienes.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 70px center ; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.product-container{
-    margin: 20px;
-    padding: 2px 16px;
-
+#banner p{
+    color: #fff;
 }
 
-.product-container:hover{
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 5);
+#banner h1{
+    color: #fff;
 }
 
+/* ---------------------------------------------------------TIENDA--------------------------------------------------- */
 
-.product-container img{
-    width: 500px;
+.pagination{
+    margin-left: 13%;
 }
 
-.product-container h4{
-    color: #f56e00;
+.pagination a{
+    color: #000;
+}
+
+#featured>nav>ul>li.page-item.active>a{
+    background-color: #1d1d1d;
+}
+
+#featured > nav > ul > li:nth-child(n):hover>a{
+    background-color: coral;
+    color: #f8f9fa;
+}
+
+/* ------------------------PRODUCTOS PAGES------------------------------*/
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 50%;
+    cursor: pointer;
+}
+
+.small-img1{
+    width: 189px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.small-img2{
+    width: 124px;
+    height: 38px;
+}
+.small-img3{
+    width: 110px;
+    height: 40px;
+}
+.small-img4{
+    width: 154px;
+    height: 45px;
+}
+
+.sproduct select{
+    display: block;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-right: 10px;
     font-family: 'Roboto', sans-serif;
-    font-size: 15pt;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+    border: solid #f56e00 1px;
+    border-radius: 4px;
 }
 
-/* -------------------------------------GALERÍA-------------------------------------- */
+.sproduct select:focus{
+    outline: none;
+}
+
+.sproduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: solid #f56e00 1px;
+    border-radius: 4px;
+
+}
+
+.sproduct input:focus{
+    outline: none;
+}
+
+
+.buy-btn a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------------------------------------------------GALERÍA---------------------------------------------------------- */
 
 .container-img{
     width: 100%;
@@ -346,7 +399,7 @@ footer .copyright a:hover{
     grid-row-start: span 1;
 }
 
-/* ------------------------------------------NOSOTROS----------------------------------- */
+/* ------------------------------------------------------NOSOTROS------------------------------------------------------ */
 
 .galeria{
     height: 800px;
@@ -419,7 +472,7 @@ footer .copyright a:hover{
     padding-top: 30px;
 }
 
-/* -----------------------------------------CONTACTENOS----------------------------------- */
+/* ------------------------------------------------------CONTACTENOS-------------------------------------------------- */
 
 .container-form{
     width: 100%;
@@ -484,69 +537,3 @@ footer .copyright a:hover{
     color: #f56e00;
 }
 
-/* ---------------------------------------------------PRODUCTOS PAGES-------------------------------------------*/
-
-.small-img-group{
-    display: flex;
-    justify-content: space-between;
-}
-
-.small-img-col{
-    flex-basis: 50%;
-    cursor: pointer;
-}
-
-.small-img1{
-    width: 189px;
-    height: 40px;
-    margin-bottom: 30px;
-}
-.small-img2{
-    width: 124px;
-    height: 38px;
-}
-.small-img3{
-    width: 110px;
-    height: 40px;
-}
-.small-img4{
-    width: 154px;
-    height: 45px;
-}
-
-.sproduct select{
-    display: block;
-    padding: 10px 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    font-family: 'Roboto', sans-serif;
-    border: solid #f56e00 1px;
-    border-radius: 4px;
-}
-
-.sproduct select:focus{
-    outline: none;
-}
-
-.sproduct input{
-    width: 50px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    font-family: 'Roboto', sans-serif;
-    border: solid #f56e00 1px;
-    border-radius: 4px;
-
-}
-
-.sproduct input:focus{
-    outline: none;
-}
-
-
-.buy-btn a{
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    color: white;
-}
