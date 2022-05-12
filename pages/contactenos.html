@@ -30,11 +30,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div class="container">
           <img src="/images/logo.png" alt="" width="200">
-
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i id="bar" class="fa-solid fa-bars"></i></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               
@@ -42,20 +40,20 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
 
-              <li class="nav-item"> 
-                <a class="nav-link" href="#">Tienda</a>
+              <li class="nav-item">
+                <a class="nav-link" href="./tienda.html">Tienda</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galería</a>
+                <a class="nav-link" href="./galeria.html">Galería</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="contactenos.html">Contáctenos</a>
+                <a class="nav-link" href="#">Contáctenos</a>
               </li>
 
               <li class="nav-item">
@@ -68,14 +66,13 @@
 </header>
     
     <main>
-
          <!-- wsp  -->
          <a href="https://api.whatsapp.com/send?phone=3002481642" class="btn-wsp" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
         
-        <section class="container-form">
-            <div class="info-form">
+        <section class="container mx-auto pt-4 mt-5 row contactenos">
+            <div class="info-form col-lg-6 col-md-6 col-12 mb-4">
                 <h2>Contáctenos</h2>
                 <a href="#"><i class="fa-solid fa-phone"></i>4805896</a>
                 <a href="#"><i class="fa-regular fa-envelope"></i>Caydisas@gmail.com</a>
@@ -83,7 +80,7 @@
 
             </div>
 
-            <form action="#" autocomplete="off">
+            <form id="form" method="post" action="#" class="col-lg-6 col-md-6 col-12">
                     <input type="text" name="Nombres" placeholder="Ingresa tus nombres" class="campo">
                     <input type="text" name="Apelidos" placeholder="Ingresa tus apellidos" class="campo">
                     <input type="mail" name="email" placeholder="Ingresa tu correo" class="campo">
@@ -91,7 +88,7 @@
                     
                     <textarea name="Comentarios" placeholder="Ingresa tu mensaje"></textarea>
 
-                    <input type="submit" name="enviar" value="Enviar" class="btn-enviar">
+                    <input type="submit" name="enviar" value="Enviar" class="btn-enviar"> 
             </form>
         </section>
     </main>
@@ -101,12 +98,13 @@
     <div class="row container mx-auto pt-5">
 
         <!-- columna 1 -->
-        <div class="footer-one col-lg-3 col-md-6 col-12">
-            <img src="/images/logo.png" alt="" width="250">
+        <div class="col-lg-3 col-md-6 col-12">
+            <img src="../images/logo.png" alt="" width="260 ml-5
+            ">
         </div>
 
         <!-- columna 2 -->
-        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <div class="col-lg-3 col-md-6 col-12 mb-3">
             <h5 class="pb-2">Navegación</h5>
             <ul class="text-uppercase list-unstyled">
                 <li><a href="#">Inicio</a></li>
@@ -118,7 +116,7 @@
         </div>
 
         <!-- columna 3 -->
-        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <div class="col-lg-3 col-md-6 col-12 mb-3">
             <h5 class="pb-2">Contáctenos</h5>
             <div>
                 <h6 class="text-uppercase">Dirección</h6>
@@ -135,14 +133,14 @@
         </div>
 
         <!-- columna 4 -->
-        <div class="footer-one col-lg-3 col-md-6 col-12">
+        <div class="col-lg-3 col-md-6 col-12">
             <h5 class="pb-2">Encuéntranos</h5>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5623.883547836944!2d-74.13037062517084!3d4.6499448315077645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c75bad60753%3A0x9f8d3d9edd90e562!2sMultiplaza%20Centro%20Comercial!5e0!3m2!1ses!2sco!4v1648496213198!5m2!1ses!2sco" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
         </div>
     </div>
 
     <!-- copyright -->
-    <div class="copyright mt-5">
+    <div class="copyright text-center mt-5">
         <div class="row container mx-auto">
 
             <div class="col-lg-3 col-md-6 col-12 mb-4">
