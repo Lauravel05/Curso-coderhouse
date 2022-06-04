@@ -279,26 +279,24 @@ footer .copyright a:hover{
 }
 
 .small-img-col{
-    flex-basis: 50%;
     cursor: pointer;
 }
 
 .small-img1{
-    width: 189px;
-    height: 40px;
-    margin-bottom: 30px;
+    width: 115px;
+    height: 30px;
 }
 .small-img2{
-    width: 124px;
-    height: 38px;
+    width: 100px;
+    height: 30px;
 }
 .small-img3{
-    width: 110px;
-    height: 40px;
+    width: 100px;
+    height: 30spx;
 }
 .small-img4{
-    width: 154px;
-    height: 45px;
+    width: 115px;
+    height: 30px;
 }
 
 .sproduct select{
@@ -346,6 +344,29 @@ footer .copyright a:hover{
 }
 
 /* ------------------------------------------------------NOSOTROS------------------------------------------------------ */
+
+#blog-container .post .post-img{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#blog-container .post img{
+    transition: 0.3s ease;
+}
+
+#blog-container .post:hover img{
+    transform: scale(1.13) rotate(-4deg);
+    opacity: 0.8;
+}
+
+#blog-container .post h3{
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#blog-container .post:hover h3{
+    color: coral;
+}
 
 .galeria{
     height: 800px;
