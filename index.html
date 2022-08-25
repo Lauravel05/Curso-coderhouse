@@ -16,12 +16,15 @@
 <!-- css -->
     <link rel="stylesheet" href="css/estilos.css">
 
+<!-- JavaScript -->
+    <script src="js/script.js"></script>
+
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div class="container">
           <img src="./images/logo.png" alt="" width="200">
 
@@ -56,7 +59,32 @@
         </a>
 
         <!-- banner principal -->
-        <section id="home"></section>
+        <!-- <section id="home"></section> -->
+
+        <section class="container-slider">
+            <div class="slider" id="slider">
+
+                <div class="slider-section">
+                    <img src="images/banner.jpeg" alt="" class="slider-img">
+                </div>
+
+                <div class="slider-section">
+                    <img src="images/foto1.jpeg" alt="" class="slider-img">
+                </div>
+
+                <div class="slider-section">
+                    <img src="images/foto6.jpeg" alt="" class="slider-img">
+                </div>
+
+                <div class="slider-section">
+                    <img src="images/foto5.jpeg" alt="" class="slider-img">
+                </div>
+            </div>
+
+            <div class="slider-btn slider-btn-right" id="btn-right">&#62;</div>
+            <div class="slider-btn slider-btn-left" id="btn-left">&#60;</div>
+
+        </section>
 
         <!-- sección nuestros productos -->
         <section id="featured" class="my-5 pb-5">

@@ -195,6 +195,7 @@ footer .copyright a:hover{
 
 /* -------------------BANNER PRINCIPAL -----------------------*/
 
+/*  
 #home{
     background-image: url(../images/banner.jpeg);
     width: 100%;
@@ -202,6 +203,61 @@ footer .copyright a:hover{
     background-size: cover;
     background-position: top 130px center ;  
 }
+*/
+
+.container-slider{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider-section{
+    width: 100%;
+}
+
+.slider-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider.btn:hover{
+    background: #fff;
+}
+
+.slider-btn-left{
+    left: 10px;
+}
+
+.slider-btn-right{
+    right: 10px;
+}
+
 
 /* ------------------NUESTROS PRODUCTOS----------------------- */
 .product{
