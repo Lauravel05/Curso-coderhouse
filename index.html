@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/buscador.css">
 
+<!-- libreria sweetAlert  -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
 
@@ -104,69 +108,14 @@
         </section>
 
         <!-- sección nuestros productos -->
+
         <section id="featured" class="my-5 pb-5">
             <div class="container text-center mt-4 pb-4">
                 <h3>Nuestros productos</h3>
                 <hr class="mx-auto">
             </div>
 
-            <div class="row mx-auto container-fluid">
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="./images/producto1.jpeg" alt="producto1">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Velón #8</h5>
-                    <h4 class="p-proce">$8.500</h4>
-                    <button class="buy-btn"><a href="pages/vela8.html">Ver detalles</a></button>
-                </div>
-
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="./images/producto2.jpeg" alt="producto2">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Velón #9</h5>
-                    <h4 class="p-proce">$10.000</h4>
-                    <button class="buy-btn"><a href="pages/vela9.html">Ver detalles</a></button>
-                </div>
-
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="./images/producto3.jpeg" alt="producto3">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Pebeteros</h5>
-                    <h4 class="p-proce">$2.000</h4>
-                    <button class="buy-btn"><a href="pages/pebeteros.html">Ver detalles</a></button>
-                </div>
-
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="./images/producto4.jpeg" alt="producto4">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Vela aromatizada</h5>
-                    <h4 class="p-proce">$4.500</h4>
-                    <button class="buy-btn"><a href="pages/aromatizadas.html">Ver detalles</a></button>
-                </div>
-            </div>
+            <div class="contenedor row mx-auto container-fluid"></div>
         </section>
 
         <!-- seccion quienes somos  -->
@@ -260,6 +209,7 @@
 <!-- JavaScript -->
 <script src="js/slider.js"></script>
 <script src="js/buscador.js"></script>
+<script src="js/obtenerProductos.js"></script>
 
 
 </body>
