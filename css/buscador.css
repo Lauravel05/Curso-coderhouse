@@ -1,12 +1,13 @@
 #ctn-bars-search{
     position: fixed;
-    top: 22%;
+    top: -22%;
     width: 100%;
     max-width: 80%;
     background: #f8f9fa;
     padding: 20px;
     z-index: 10;
     margin-left: 10%;
+    transition: all 600ms;
 }
 
 #ctn-bars-search input{
@@ -26,8 +27,9 @@
     background: #f8f9fa;
     overflow: hidden;
     z-index: 9;
-    margin-top: 20px;
-    margin-left: -20px;
+    margin-top: 45%;
+    margin-left: 10%;
+    display: none;
 }
 
 #box-search li a{
@@ -54,4 +56,5 @@
     left: 0%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 8;
+    display: none;
 }
