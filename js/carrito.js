@@ -27,8 +27,8 @@ const carritoDiv = document.querySelector(".carrito")
 function crearCards(){
     productos.forEach(prod=>{
         containerDiv.innerHTML += `<div>
-        <h4>${prod.nombre}</h4>
-        <p>$${prod.precio}</p>
+        <h5>${prod.nombre}</h5>
+        <h4>$${prod.precio}</h4>
         <button id"btn-agregar${prod.id}">Agregar</button>
         </div>`
     })

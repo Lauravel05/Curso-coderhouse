@@ -12,12 +12,17 @@ function mostrarBuscador(){
     barSearch.style.top = "22%";
     coverSearch.style.display = "block";
     inputSearch.focus();
+
+    if(inputSearch.value === ""){
+        boxSearch.style.display = "none"
+    }
 }
 
 function ocultarBuscador(){
     barSearch.style.top = "-22%";
     coverSearch.style.display = "none";
     inputSearch.value = "";
+    boxSearch.style.display = "none"
 }
 
 function buscadorInterno(){
@@ -31,6 +36,10 @@ function buscadorInterno(){
         if(textValue.toUpperCase().indexOf(filter) > -1){
             li[i].style.display = "";
             boxSearch.style.display = "block"
+
+            if(inputSearch.value === ""){
+                boxSearch.style.display = "none"
+            }
         }else{
             li[i].style.display = "none";
         }
