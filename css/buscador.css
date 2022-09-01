@@ -1,49 +1,50 @@
-.ctn-bars-search{
+#ctn-bars-search{
     position: fixed;
     top: 22%;
     width: 100%;
     max-width: 80%;
     background: #f8f9fa;
     padding: 20px;
+    z-index: 10;
+    margin-left: 10%;
 }
 
-.ctn-bars-search input{
+#ctn-bars-search input{
     display: block;
-    margin-top: 36%;
     width: 100%;
     margin: auto;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     outline: 0;
 }
 
-#boxSearch{
+#box-search{
     position: fixed;
-    top: 36%;
     width: 100%;
     max-width: 80%;
     width: 100%;
     background: #f8f9fa;
-    z-index: 9;
     overflow: hidden;
+    z-index: 9;
+    margin-top: 20px;
+    margin-left: -20px;
 }
 
-
-#boxSearch li a{
+#box-search li a{
     display: block;
     width: 1200px;
     color: #000;
     padding: 12px 20px;
 }
 
-#boxSearch li a:hover{
+#box-search li a:hover{
     color: coral;
     background-color: #fff;
     width: 100%;
 }
 
-#boxSearch li a i{
-    margin-right: 5px;
+#box-search li a i{
+    margin-right: 10px;
 }
 
 #cover-ctn-search{
@@ -52,6 +53,5 @@
     position: fixed;
     left: 0%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: -50;
-    margin-top: 36%;
+    z-index: 8;
 }

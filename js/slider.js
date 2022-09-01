@@ -1,5 +1,3 @@
-// banner principal / slider 
-
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider-section");
 let sliderSectionLast = sliderSection[sliderSection.length -1];

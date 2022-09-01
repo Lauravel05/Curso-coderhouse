@@ -15,13 +15,29 @@
 
 <!-- css -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/buscador.css">
 
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
+
+    <div id="ctn-bars-search">
+        <input type="search" id="inputSearch" placeholder="¿Qué deseas buscar?">
+
+        <ul id="box-search">
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Velón #8</a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Velón #9</a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Vela aromatizada</a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Pebeteros</a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Quienes</a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Contacto</a></li>
+        </ul>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+
         <div class="container">
           <img src="./images/logo.png" alt="" width="200">
 
@@ -44,10 +60,11 @@
               </li> 
             </ul>  
           </div>
-
-         
+        </div>
     </nav>
 </header>
+
+    <div id="cover-ctn-search"></div>
 
     <main>
 
@@ -58,7 +75,6 @@
 
         <!-- banner principal -->
         <!-- <section id="home"></section> -->
-
         <section class="container-slider">
             <div class="slider" id="slider">
 
@@ -240,7 +256,9 @@
 
 
 <!-- JavaScript -->
-<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/buscador.js"></script>
+
 
 </body>
 </html>
