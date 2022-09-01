@@ -15,13 +15,16 @@
 
 <!-- css -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/buscador.css">
 
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+
         <div class="container">
           <img src="./images/logo.png" alt="" width="200">
 
@@ -44,10 +47,26 @@
               </li> 
             </ul>  
           </div>
+        </div>
 
-         
+        <div id="ctn-bars-search">
+            <input type="search" id="inputSearch" placeholder="¿Qué deseas buscar?">
+        </div>
+        
+        <div id="box-search">
+            <ul>
+                <li><a href="pages/vela8.html"><i class="fa-solid fa-magnifying-glass"></i>Velón #8</a></li>
+                <li><a href="pages/vela9.html"><i class="fa-solid fa-magnifying-glass"></i>Velón #9</a></li>
+                <li><a href="pages/aromatizadas.html"><i class="fa-solid fa-magnifying-glass"></i>Vela aromatizada</a></li>
+                <li><a href="pages/pebeteros.html"><i class="fa-solid fa-magnifying-glass"></i>Pebeteros</a></li>
+                <li><a href="pages/nosotros.html"><i class="fa-solid fa-magnifying-glass"></i>Quienes</a></li>
+                <li><a href="pages/contactenos.html"><i class="fa-solid fa-magnifying-glass"></i>Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
+
+    <div id="cover-ctn-search"></div>
 
     <main>
 
@@ -58,7 +77,6 @@
 
         <!-- banner principal -->
         <!-- <section id="home"></section> -->
-
         <section class="container-slider">
             <div class="slider" id="slider">
 
@@ -104,7 +122,7 @@
                     </div>
                     <h5 class="p-name">Velón #8</h5>
                     <h4 class="p-proce">$8.500</h4>
-                    <button class="buy-btn"><a href="pages/vela8.html">Ver más</a></button>
+                    <button class="buy-btn"><a href="pages/vela8.html">Ver detalles</a></button>
                 </div>
 
                 <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -118,7 +136,7 @@
                     </div>
                     <h5 class="p-name">Velón #9</h5>
                     <h4 class="p-proce">$10.000</h4>
-                    <button class="buy-btn"><a href="pages/vela9.html">Ver más</a></button>
+                    <button class="buy-btn"><a href="pages/vela9.html">Ver detalles</a></button>
                 </div>
 
                 <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -132,7 +150,7 @@
                     </div>
                     <h5 class="p-name">Pebeteros</h5>
                     <h4 class="p-proce">$2.000</h4>
-                    <button class="buy-btn"><a href="pages/pebeteros.html">Ver más</a></button>
+                    <button class="buy-btn"><a href="pages/pebeteros.html">Ver detalles</a></button>
                 </div>
 
                 <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -146,7 +164,7 @@
                     </div>
                     <h5 class="p-name">Vela aromatizada</h5>
                     <h4 class="p-proce">$4.500</h4>
-                    <button class="buy-btn"><a href="pages/aromatizadas.html">Ver más</a></button>
+                    <button class="buy-btn"><a href="pages/aromatizadas.html">Ver detalles</a></button>
                 </div>
             </div>
         </section>
@@ -240,7 +258,9 @@
 
 
 <!-- JavaScript -->
-<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/buscador.js"></script>
+
 
 </body>
 </html>
