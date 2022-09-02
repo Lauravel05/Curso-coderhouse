@@ -46,7 +46,7 @@ function crearCards(){
         <h5>${prod.nombre}</h5>
         <h4>$${prod.precio}</h4>
         <button class="buy-btn" id="btn-agregar${prod.id}"><a href=${prod.link}>Ver detalles</a></button>
-        <button oneclick="mostrar()" class="buy-btn" id="btn-agregar${prod.id}">Agregar al carrito</button>
+        <button onclick="mostrar()" class="buy-btn" id="btn-agregar${prod.id}">Agregar al carrito</button>
         </div>`
     })
 }
@@ -58,6 +58,6 @@ function mostrar(){
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: '¡Lo siento, nustra tienda está en remodelación!',
+        text: '¡Lo siento, nuestra tienda está en remodelación!',
       })
 }
