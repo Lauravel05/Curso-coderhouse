@@ -46,7 +46,7 @@ function crearCards(){
         <h5>${prod.nombre}</h5>
         <h4>$${prod.precio}</h4>
         <button class="buy-btn" id="btn-agregar${prod.id}"><a href=${prod.link}>Ver detalles</a></button>
-        <button class="buy-btn" id="btn-agregar${prod.id}">Agregar al carrito</button>
+        <button oneclick="mostrar()" class="buy-btn" id="btn-agregar${prod.id}">Agregar al carrito</button>
         </div>`
     })
 }
@@ -54,7 +54,7 @@ function crearCards(){
 crearCards();
 
 
-function mostrar (){
+function mostrar(){
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
