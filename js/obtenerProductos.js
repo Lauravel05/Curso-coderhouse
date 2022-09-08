@@ -79,12 +79,16 @@ function borrarProducto(){
 }
 crearCards();
 
-// onclick="mostrar()"
-// function mostrar(){
-//     Swal.fire({
-//         icon: 'error',
-//         title: 'Oops...',
-//         text: '¡Lo siento, nuestra tienda está en remodelación!',
-//         width: '30%',
-//       })
-// }
+
+function mostrar(){
+
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: '¡Lo siento, nuestra tienda está en remodelación!',
+        width: '30%',
+      })
+}
+document.getElementById("cart").onclick = function (){
+    mostrar()
+}
