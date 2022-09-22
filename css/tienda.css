@@ -1,0 +1,85 @@
+/* paginación de tienda  */
+
+.pagination{
+    margin-left: 13%;
+}
+
+.pagination a{
+    color: #000;
+}
+
+#featured>nav>ul>li.page-item.active>a{
+    background-color: #1d1d1d;
+}
+
+#featured > nav > ul > li:nth-child(n):hover>a{
+    background-color: coral;
+    color: #f8f9fa;
+}
+
+/* detalles productos  */
+
+/* ------------------------PRODUCTOS PAGES------------------------------*/
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    cursor: pointer;
+}
+
+.small-img1{
+    width: 115px;
+    height: 30px;
+}
+.small-img2{
+    width: 100px;
+    height: 30px;
+}
+.small-img3{
+    width: 100px;
+    height: 30spx;
+}
+.small-img4{
+    width: 115px;
+    height: 30px;
+}
+
+.sproduct select{
+    display: block;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: solid coral 1px;
+    border-radius: 4px;
+}
+
+.sproduct select:focus{
+    outline: none;
+}
+
+.sproduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: solid coral 1px;
+    border-radius: 4px;
+
+}
+
+.sproduct input:focus{
+    outline: none;
+}
+
+
+.buy-btn a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+}

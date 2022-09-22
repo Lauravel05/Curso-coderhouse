@@ -1,7 +1,7 @@
 const containerDiv = document.querySelector(".contenedor")
 const carritoDiv = document.querySelector(".carrito")
 let productos = []
-let carrito = []
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 async function crearCards(){
     productos = await fetch("../json/productos.json")
@@ -19,7 +19,7 @@ async function crearCards(){
                     </div>
         <h5>${prod.nombre}</h5>
         <h4>$${prod.precio}</h4>
-        <button class="buy-btn"${prod.id}"><a href=${prod.link}>Ver detalles</a></button>
+        <button class="buy-btn my-2"${prod.id}"><a href=${prod.link}>Ver detalles</a></button>
         <button class="buy-btn" id="btn-agregar${prod.id}">Agregar al carrito</button>
         </div>`;
     });
@@ -49,6 +49,7 @@ function agregarAlCarrito(prod){
         }
     console.log(carrito);
     renderizarCarrito();
+    mostrar()
 }
 
 function renderizarCarrito(){
@@ -58,7 +59,7 @@ function renderizarCarrito(){
         <img class="img-fluid mb-3" src=${prod.img} alt="producto4">
         <h5>${prod.nombre}</h5>
         <h4>Cantidad:${prod.cantidad}</h4>
-        <button class="buy-btn" id="btn-borrar${prod.id}">Borrar</button>
+        <button class="buy-btn" id="btn-borrar${prod.id}"><i class="fas fa-trash-alt"></i>Borrar</button>
         </div>`;
     });
     localStorage.setItem("carrito", JSON.stringify(carrito))
@@ -66,6 +67,7 @@ function renderizarCarrito(){
 }
 
 function borrarProducto(){
+    console.log("entre a borrar el producto")
     carrito.forEach((prod) => {
         document
         .querySelector(`#btn-borrar${prod.id}`)
@@ -78,17 +80,18 @@ function borrarProducto(){
     });
 }
 crearCards();
-
+renderizarCarrito();
 
 function mostrar(){
 
     Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: '¡Lo siento, nuestra tienda está en remodelación!',
+        icon: 'success',
+        title: '¡Genial!',
+        text: 'Tu producto ha sido agregado exitosamente. Dirígete al carrito de compras para continuar con tu compra.',
         width: '30%',
       })
 }
-document.getElementById("cart").onclick = function (){
-    mostrar()
-}
+
+// document.getElementById("cart").onclick = function (){
+//     mostrar()
+// }
