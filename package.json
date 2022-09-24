@@ -1,0 +1,22 @@
+{
+  "name": "curso-coderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lauravel05/Curso-coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lauravel05/Curso-coderhouse/issues"
+  },
+  "homepage": "https://github.com/Lauravel05/Curso-coderhouse#readme",
+  "dependencies": {
+    "fs-extra": "^10.1.0"
+  }
+}
