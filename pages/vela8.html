@@ -24,6 +24,7 @@
 <!-- css -->
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/tienda.css">
+    <link rel="stylesheet" href="../css/buscador.css">
 
 <!-- libreria sweetAlert  -->
 
@@ -35,43 +36,49 @@
 <!-- HEADER  -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        
         <div class="container">
           <img src="/images/logo.png" alt="" width="200">
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul class="navbar-nav ml-auto">
-              
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="./tienda.html">Tienda</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="./galeria.html">Galería</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="./contactenos.html">Contáctenos</a>
-              </li>
-
-              <li class="nav-item">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-              </li>   
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactenos.html">Contáctenos</a></li>
+  
+                <li class="nav-item">
+                  <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                  <a href="../pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li> 
+              </ul> 
           </div>
+        </div>
+
+        <div id="ctn-bars-search">
+            <input type="search" id="inputSearch" placeholder="¿Qué deseas buscar?">
+        </div>
+        
+        <div id="box-search">
+            <ul>
+                <li><a href="../pages/vela8.html"><i class="fa-solid fa-magnifying-glass"></i>Velón #8</a></li>
+                <li><a href="/pages/vela9.html"><i class="fa-solid fa-magnifying-glass"></i>Velón #9</a></li>
+                <li><a href="../pages/aromatizadas.html"><i class="fa-solid fa-magnifying-glass"></i>Vela aromatizada</a></li>
+                <li><a href="../pages/pebeteros.html"><i class="fa-solid fa-magnifying-glass"></i>Pebeteros</a></li>
+                <li><a href="../pages/nosotros.html"><i class="fa-solid fa-magnifying-glass"></i>Quienes</a></li>
+                <li><a href="../pages/contactenos.html"><i class="fa-solid fa-magnifying-glass"></i>Contacto</a></li>
+            </ul>
         </div>
     </nav>
 </header>
 
+<div id="cover-ctn-search"></div>
 
 <main>
 
@@ -275,6 +282,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 
 <!-- JavaScript -->
-<script src="../js/alerta.js"></script>
+<script src="../js/remodelacion.js"></script>
+<script src="../js/carrito.js"></script>
+<script src="../js/buscador.js"></script>
+
 </body>
 </html>

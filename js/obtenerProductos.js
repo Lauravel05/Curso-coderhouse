@@ -31,7 +31,6 @@ function agregarFuncionalidad(){
         document
         .querySelector(`#btn-agregar${prod.id}`)
         .addEventListener("click", () =>{
-            console.log(prod);
             agregarAlCarrito(prod)
         });
     });
@@ -47,8 +46,9 @@ function agregarAlCarrito(prod){
             let prodFind = carrito.find((productoFind) => productoFind.id === prod.id);
             prodFind.cantidad++;
         }
+    localStorage.setItem("carrito", JSON.stringify(carrito))
     console.log(carrito);
-    renderizarCarrito();
+    //renderizarCarrito();
     mostrar()
 }
 
@@ -80,7 +80,7 @@ function borrarProducto(){
     });
 }
 crearCards();
-renderizarCarrito();
+//renderizarCarrito();
 
 function mostrar(){
 

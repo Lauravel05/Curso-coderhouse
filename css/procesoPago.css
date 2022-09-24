@@ -79,37 +79,3 @@
 .btn-enviar:hover{
     background-color: #3a3833;
 }
-
-
-
-
-
-
-
-
-
-
-.contactenos form .campo, textarea{
-    width: 100%;
-    padding: 10px 5px;
-    font-size: 15px;
-    border: 1px solid coral;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    outline: 0px; 
- }
- 
- .contactenos .btn-enviar:hover{
-     color: coral;
- }
- 
- .campo2 {
-    width: 150px;
-    padding: 10px 5px;
-    font-size: 15px;
-    border: 1px solid coral;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    outline: 0px; 
-    display: inline;
- }

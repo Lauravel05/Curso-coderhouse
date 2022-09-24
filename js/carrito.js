@@ -22,13 +22,13 @@ async function crearCards(){
         let totalIVA = calcularIva()
         let valorTotal = totalIVA + subTotal;
         containerDiv.innerHTML += `
-        <div class="right-bar col-4">
-            <h4>Resumen de tu compra</h4>
+        <div class="right-bar">
+            <h6>Resumen de tu compra</h6>
             <h5><span>Sub-total</span> <span>$${formatValue(subTotal)}</span></h5>
             <hr>
             <h5><span>IVA (19%)</span> <span>$${formatValue(totalIVA)}</span></h5>
             <hr>
-            <h4><span>Total</span> <span>$${formatValue(valorTotal)}</span></h4>
+            <h6><span>Total</span> <span>$${formatValue(valorTotal)}</span></h6>
             <p>El costo de envio no está incluido en el total.</p>
 
             <a href="../pages/procesoPago.html"><i class="fa fa-shopping-cart"></i>Continuar con la compra</a>
@@ -60,20 +60,5 @@ function formatValue(valueToFormat){
     let nf = new Intl.NumberFormat('de-DE');
     return nf.format(valueToFormat);
 }
-
-function borrarProducto(){
-    console.log("entre a borrar el producto")
-    carrito.forEach((prod) => {
-        document
-        .querySelector(`#btn-borrar-${prod.id}`)
-        .addEventListener("click", () => {
-            carrito = carrito.filter(
-                (productoFilter) => productoFilter.id !== prod.id
-            );
-            crearCards()
-        });
-    });
-}
-
 
 crearCards();
